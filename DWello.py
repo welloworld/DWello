@@ -3,7 +3,7 @@ import re
 from bs4 import BeautifulSoup
 from article import Article
 
-NUM_OF_ISSUES = 10 #Maybe will be dynamic in the future.
+NUM_OF_ISSUES = 100 #Maybe will be dynamic in the future.
 HEBREW_WRITTEN_BY_PREFIX = ['- נכתב ע"י','-\xa0נכתב ע"י', '-\xa0מאת', '- מאת']
 HEBREW_RELEASE_DATE_PREFIX = 'תאריך יציאה: '
 OUTPUT_FILE_GENERAL = 'DWello_general.txt'

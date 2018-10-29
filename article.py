@@ -9,7 +9,7 @@ class Article:
 		self.issueNum = issueNum
 
 	def __str__(self):
-		return f'Article: [name: "{self.articleName}", issueNum: {self.issueNum}, authorName: "{self.authorName}", link: "{self.link}", date: "{self.date}"'
+		return f'Article: [name: "{self.articleName}", issueNum: {self.issueNum}, authorName: "{self.authorName}", link: "{self.link}", date: "{self.date}" ]'
 
 	def __repr__(self):
 		return self.__str__()	
