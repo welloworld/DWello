@@ -83,6 +83,8 @@ def get_all_articles():
 	"""
 	articles = []
 	print(f'[*] Get data from {NUM_OF_ISSUES-1} issues [*]')
+	print()
+	
 	for issueNum in range(1,NUM_OF_ISSUES):
 		print(f'# [{issueNum}] #')
 		res = requests.get(URL + str(issueNum)).text
@@ -98,14 +100,14 @@ def get_all_articles():
 
 def main():
 	articles = get_all_articles()
-
+	print()
 	with open(OUTPUT_FILE_GENERAL, 'w', encoding="utf-8") as outputFile:
 		outputFile.write('\n'.join(str(x) for x in articles)) # for saving all the data on articles
-		print('[*] General data saved to "{OUTPUT_FILE_GENERAL}" [*]')
+		print(f'[*] General data saved to "{OUTPUT_FILE_GENERAL}" [*]')
 
 	with open(OUTPUT_FILE_AUTHORS, 'w', encoding="utf-8") as outputFile:
 		outputFile.write('\n'.join(x.authorName for x in articles)) #for saving all the data on article authors
-		print('[*] Authors data saved to "{OUTPUT_FILE_AUTHORS}" [*]')
+		print(f'[*] Authors data saved to "{OUTPUT_FILE_AUTHORS}" [*]')
 
 
 if __name__ == '__main__':
