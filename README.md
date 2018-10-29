@@ -13,9 +13,11 @@ Feature list:
 * Mail me when an issue released
 * Login & Register
 * Read & Write comments
+* clean folder
 
 Currently contains:
-* Get all users from all articles
+* Get the data from articles, parsing and get the date, author, issue number, link and article name for each article.
+* Saving all the data in an output file, currently saving only authors, but can be changed easily as decribed.
 
 More than welcome to send me any idea/issue to wellosworld@gmail.com
 
