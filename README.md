@@ -14,5 +14,8 @@ Feature list:
 * Login & Register
 * Read & Write comments
 
+Currently contains:
+* Get all users from all articles
+
 More than welcome to send me any idea/issue to wellosworld@gmail.com
 
